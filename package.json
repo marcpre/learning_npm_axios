@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/marcpre/learning_npm_axios#readme",
   "dependencies": {
-    "axios": "^0.17.0"
+    "axios": "^0.17.0",
+    "dot-env": "0.0.1"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
