@@ -19,5 +19,11 @@
   "homepage": "https://github.com/marcpre/learning_npm_axios#readme",
   "dependencies": {
     "axios": "^0.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0",
+    "nodemon": "^1.12.1"
   }
 }
