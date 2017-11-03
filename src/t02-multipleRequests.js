@@ -1,8 +1,12 @@
 const axios = require('axios')
-const username = 'marcpre'
 
-axios.get('https://api.github.com/users/' + username)
-    .then(function(response) {
-        console.log(response.data); // ex.: { user: 'Your User'}
-        console.log(response.status); // ex.: 200
-    })
+
+axios.all([
+        axios.get('https://api.github.com/users/marcpre'),
+        axios.get('https://api.github.com/users/marcpre/repos')
+    ])
+    .then(axios.spread(function(userResponse, reposResponse) {
+        console.log('User', userResponse.data)
+        console.log('###############################')
+        console.log('Repositories', reposResponse.data)
+    }))
